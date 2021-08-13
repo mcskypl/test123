@@ -9,9 +9,8 @@
 </head>
 <body>
 <script>
-    function openSettings()	{
-        Android.openSettings();
-    }
+    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+
 </script>
 <a href="javascript:openSettings();">Open Settings</a>
 </body>
